@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/about_banner.png" alt="بنر حساب‌یار" width="700"/>
+  <img src="assets/Github-banner-new.png" alt="بنر حساب‌یار" width="700"/>
 </p>
 
 <div dir="rtl">
