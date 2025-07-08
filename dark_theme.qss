@@ -1,0 +1,142 @@
+/* ==================== Dark Theme (Templated) ==================== */
+
+/* --- General Window and Dialog Styles --- */
+QMainWindow, QDialog, QWidget {
+    background-color: #1e1e1e;
+    font-family: Segoe UI, sans-serif;
+    color: #e0e0e0;
+}
+
+/* --- Main Content Frames and Forms --- */
+QFrame#formDialog, QFrame[objectName="formDialog"] {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+/* --- Labels and Titles --- */
+QLabel {
+    font-size: 14px;
+    color: #e0e0e0;
+    background-color: transparent;
+}
+#dialogTitleLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: {{ACCENT_COLOR}}; /* Replaced */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 15px;
+}
+
+/* --- Input Widgets --- */
+QLineEdit, QComboBox, QTextEdit, QDateEdit, QTableWidget {
+    background-color: #333333;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    color: #e0e0e0;
+    min-height: 20px;
+}
+QLineEdit:focus, QComboBox:focus, QTextEdit:focus, QDateEdit:focus {
+    border-color: {{ACCENT_COLOR}}; /* Replaced */
+}
+QTableWidget {
+    gridline-color: #454545;
+}
+
+/* --- Buttons --- */
+QPushButton {
+    background-color: #333333;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+QPushButton:hover {
+    background-color: #454545;
+}
+QPushButton#primaryButton {
+    background-color: {{ACCENT_COLOR}}; /* Replaced */
+    color: #121212;
+    border: none;
+    font-weight: bold;
+}
+QPushButton#primaryButton:hover {
+    background-color: {{ACCENT_COLOR}}; /* Replaced */
+    opacity: 0.9;
+}
+.actionButton {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+.actionButton:hover {
+    background-color: #454545;
+}
+
+/* --- Side Menu --- */
+#sideMenu {
+    background-color: #2a2a2a;
+    border-right: 1px solid #333;
+}
+#sideMenu QPushButton {
+    color: #e0e0e0;
+    background-color: transparent;
+    border: none;
+    padding: 15px 20px;
+    text-align: right;
+    font-weight: bold;
+}
+#sideMenu QPushButton:hover {
+    background-color: #333333;
+}
+#sideMenu QPushButton:checked {
+    background-color: {{ACCENT_COLOR}}; /* Replaced */
+    color: #121212;
+}
+#dateLabel {
+    color: #aaaaaa;
+    font-size: 12px;
+    padding: 10px;
+}
+
+/* --- Report Page Specific Styles --- */
+#statValueLabel { font-size: 22px; font-weight: bold; color: {{ACCENT_COLOR}}; } /* Replaced */
+#statTitleLabel { font-size: 14px; color: #aaaaaa; }
+
+/* === FINAL FIX FOR COMBOBOX & REPORT TABLE === */
+QComboBox QAbstractItemView {
+    background-color: #333333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    selection-background-color: {{ACCENT_COLOR}}; /* Replaced */
+    selection-color: #121212;
+}
+QTextEdit[readOnly="true"] th {
+    background-color: #4a4a4a;
+    color: #f8f9fa;
+    font-weight: bold;
+    padding: 6px;
+    border: 1px solid #555;
+}
+
+QHeaderView::section {
+    background-color: #333333;
+    color: #e0e0e0;
+    padding: 4px;
+    border: 1px solid #454545;
+}
+
+/* --- Status Bar --- */
+QStatusBar {
+    background-color: #2a2a2a;
+
+}
+QStatusBar::item {
+    border: none;
+}
